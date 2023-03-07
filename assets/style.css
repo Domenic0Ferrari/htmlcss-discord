@@ -48,12 +48,23 @@ ul{
     margin-right: auto;
 }
 
+.logo:hover{
+    background-color: brown;
+}
+
 .center{
     margin: 1.5rem;
+}
+
+.center:hover{
+    background-color: brown;
 }
     
 .accedi{
     margin-left: auto;
+}
+.accedi:hover{
+    background-color: brown;
 }
 
 a{
@@ -94,7 +105,40 @@ main{
     margin: 1rem;
     width: 80%;
     height: 450px;
-    background-color: palevioletred;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    /* background-color: palevioletred; */
+}
+
+h1{
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 50px;
+}
+
+.discord{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.scarica{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.apri{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 20px;
 }
 
 .bianco{
