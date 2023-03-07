@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/* header */
+
 header{
     display: flex;
     justify-content: center;
@@ -15,17 +17,14 @@ header{
 }
 
 nav{
-    width: 1000px;
+    width: 1200px;
     height: 50px;
-    /* background-color: gold; */
     margin: 1rem;
     margin-inline: auto;
 }
 
 .nav .menu {
-    /* max-width: 1000px; */
 	display: flex;
-	/* justify-content: space-between; */
 	align-items: stretch;
 	height: 100%;
 }
@@ -39,9 +38,9 @@ ul{
     list-style: none;
     display: flex;
     align-items: center;
+    gap: 3rem;
     height: 100%;
     width: 100%;
-    /* justify-content: space-between; */
 }
 
 .logo{
@@ -49,22 +48,18 @@ ul{
 }
 
 .logo:hover{
-    background-color: brown;
-}
-
-.center{
-    margin: 1.5rem;
+    background-color: red;
 }
 
 .center:hover{
-    background-color: brown;
+    background-color: red;
 }
     
 .accedi{
     margin-left: auto;
 }
 .accedi:hover{
-    background-color: brown;
+    background-color: red;
 }
 
 a{
@@ -76,40 +71,53 @@ a{
     font-size: 18px;
 }
 
-.end{
+.button{
     height: 35px;
     width: 70px;
     background-color: white;
     border-radius: 20px;
-}
-
-.accedidue{
+    display: flex;
+    justify-content: center;
     color: black;
 }
 
 
+
+
 /* main */
+
 main{
     margin-inline: auto;
 }
 
 
-.blu{
+.image{
+    background-size: cover;
+    background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(../img/jumbo.png);
+    position: relative;
     max-width: 100%;
+    margin-inline: auto;
+    height: 530px;
+}
+
+.contenitore{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
     margin-inline: auto;
 }
 
 .rosa{
     margin: 1rem;
     width: 80%;
-    /* height: 450px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    /* background-color: palevioletred; */
 }
 
 h1{
@@ -128,33 +136,29 @@ h1{
 .scarica{
     background-color: white;
     font-size: 20px;
-    height: 40px;
+    height: 45px;
+    width: 160px;
     border-radius: 20px;
-}
-
-.scaricauno{
     color: black;
+    display: flex;
+    justify-content: center;
 }
 
 .apri{
     background-color: black;
     color: white;
     font-size: 20px;
-    height: 40px;
+    height: 45px;
+    width: 300px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
 }
+
+/* fine primo container */
 
 .bianco{
     background-color: white;
-}
-
-.contenitore{
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
-    margin-inline: auto;
 }
 
 .azzurro{
