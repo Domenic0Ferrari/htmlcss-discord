@@ -159,26 +159,34 @@ h1{
 
 .bianco{
     background-color: white;
+    height: 800px;
+    padding-top: 5rem;
 }
 
-.azzurro{
-    background-color: cornflowerblue;
-    height: 380px;
-    width: 60%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+/* .rana{
+    /* background-color: cornflowerblue; */
+    /* height: 380px; */
+    /* margin-bottom: 0.5rem;
+ } */
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-.fucsia{
-    background-color: fuchsia;
-    height: 380px;
-    width: 40%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+h2{
+    font-size: 35px;
+}
+
+.talk{
+    font-size: 20px;
 }
 
 .grigio{
     background-color: grey;
+    padding-top: 5rem;
+    height: 800px;
 }
 
 .verde{
