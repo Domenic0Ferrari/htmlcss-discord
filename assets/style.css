@@ -177,6 +177,7 @@ h1{
 
 h2{
     font-size: 35px;
+    text-align: center;
 }
 
 .talk{
@@ -189,12 +190,39 @@ h2{
     height: 800px;
 }
 
-.verde{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    background-color: green;
-    width: 100%;
-    height: 600px;
+.grigiodue{
+    background-color: grey;
+    padding-top: 6rem;
+    height: 1000px;
+    margin-inline: auto;
+}
+
+.ciao{
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.video{
+    font-size: 20px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 27px;
+    text-align: center;
+    margin-top: 2rem;
+    background-image: url(../img/stars.svg);
+}
+
+.installa{
+    background-color: cornflowerblue;
+    font-size: 20px;
+    height: 45px;
+    width: 160px;
+    border-radius: 20px;
+    color: black;
+    margin-inline: auto;
 }
 
 footer{
