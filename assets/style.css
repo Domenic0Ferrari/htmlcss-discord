@@ -1,3 +1,5 @@
+/*reset*/
+
 *{
     padding: 0;
     margin: 0;
@@ -8,11 +10,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #255EE9;
     margin-inline: auto;
 }
 
-.nav{
+nav{
     width: 1000px;
     height: 50px;
     background-color: gold;
@@ -20,20 +22,58 @@ header{
     margin-inline: auto;
 }
 
+.nav .menu {
+    /* max-width: 1000px; */
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: stretch;
+	height: 100%;
+}
+
+.nav .menu > * {
+	display: flex;
+	align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+img{
+    margin-right: auto;
+}
+
+a{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+
+
+
+/* main */
 main{
     margin-inline: auto;
 }
 
 
 .blu{
-    background-color: blue;
+    background-size: 100%;
+    background-image: url(../img/jumbo.png);
+    max-width: 100%;
     margin-inline: auto;
 }
 
 .rosa{
     margin: 1rem;
     width: 80%;
-    height: 250px;
+    height: 450px;
     background-color: palevioletred;
 }
 
