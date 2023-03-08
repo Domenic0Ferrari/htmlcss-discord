@@ -6,249 +6,243 @@
     box-sizing: border-box;
 }
 
+html {
+	font-size: 20px;
+	font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.4;
+}
+
+/* general style */
+
+.container {
+	max-width: 1300px;
+	margin-inline: auto;
+	padding-inline: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: .5em .7em;
+	border-radius: 9em;
+	white-space: nowrap;
+}
+
+.btn-white {
+	background-color: white;
+	color: black;
+}
+
+.btn-dark {
+	background-color: black;
+	color: white;
+}
+
+.btn-violet {
+	background-color: #8EA1E1;
+	color: white;
+}
+
+.btn-big {
+	padding: .8em 1.2em;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+
 /* header */
 
 header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #255EE9;
-    margin-inline: auto;
 }
 
-nav{
-    width: 1200px;
-    height: 50px;
-    margin: 1rem;
-    margin-inline: auto;
+.navbar{
+    height: 4rem;
 }
 
-.nav .menu {
-	display: flex;
-	align-items: stretch;
+.navbar .container {
 	height: 100%;
 }
 
-.nav .menu > * {
+.navbar .main-menu {
+	display: flex;
+	height: 100%;
+	list-style: none;
+}
+
+.navbar .center {
+	display: flex;
+	align-items: center;
+	padding-inline: 1rem;
+	height: 100%;
+	color: white;
+	white-space: nowrap;
+}
+
+.navbar .logo,
+.navbar .accedi {
+	flex: 1 0 0;
 	display: flex;
 	align-items: center;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    height: 100%;
-    width: 100%;
+.navbar .logo a {
+	height: 50%;
 }
 
-.logo{
-    margin-right: auto;
+.navbar .accedi {
+	justify-content: flex-end;
 }
 
-.logo:hover{
-    background-color: red;
+.navbar .center:hover {
+	background-color: brown;
+	cursor: pointer;
 }
 
-.center:hover{
-    background-color: red;
-}
-    
-.accedi{
-    margin-left: auto;
-}
-.accedi:hover{
-    background-color: red;
+.jumbo {
+	background-image: url('../img/jumbo.png');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
 }
 
-a{
-    height: 100%;
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+.jumbo p {
+	margin-bottom: 1rem;
 }
 
-.button{
-    height: 35px;
-    width: 70px;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    color: black;
+.jumbo .content {
+	max-width: 800px;
+	margin-inline: auto;
+	padding-inline: 1rem;
 }
 
-
-
+.jumbo {
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+}
 
 /* main */
 
-main{
-    margin-inline: auto;
+main section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.section-feature .container {
+	display: flex;
+	align-items: center;
+	gap: 10%;
+}
+
+.section-feature.reverse .container {
+	flex-direction: row-reverse;
+}
+
+.bkg-gray {
+	background-color: #cccccc; /* TODO: check value */
+}
+
+.section-feature .image {
+	flex: 0 0 60%;
+}
+
+.section-feature .image img {
+	width: 100%;
+}
+
+.section-feature .text {
+	flex: 0 0 30%;
+}
+
+.section-full {
+	text-align: center;
+}
+
+.section-full h3 {
+	margin-inline: auto;
+	padding: 3rem;
+	max-width: 600px;
+	background-image: url('../img/stars.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 
 
-.image{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url(../img/jumbo.png);
-    position: relative;
-    max-width: 100%;
-    margin-inline: auto;
-    height: 530px;
+/* footer */
+
+footer {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	background-color: black;
 }
 
-.contenitore{
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
-    margin-inline: auto;
+footer .footer-top {
+	display: flex;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 3px solid white;
 }
 
-.rosa{
-    margin: 1rem;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+footer .column-socials {
+	flex: 0 0 40%;
+	color: white;
 }
 
-h1{
-    margin-top: 6rem;
-    margin-bottom: 1rem;
-    color: white;
-    font-size: 50px;
+footer .first-level-list {
+	flex: 0 0 60%;
 }
 
-.discord{
-    text-align: center;
-    color: white;
-    font-size: 22px;
+footer .column-socials h2 {
+	color: #8EA1E1;
 }
 
-.scarica{
-    background-color: white;
-    font-size: 20px;
-    height: 45px;
-    width: 160px;
-    border-radius: 20px;
-    color: black;
-    display: flex;
-    justify-content: center;
+footer .lang img {
+	height: 1em;
 }
 
-.apri{
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    height: 45px;
-    width: 300px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
+footer .socials {
+	font-size: 2em;
 }
 
-/* fine primo container */
-
-.bianco{
-    background-color: white;
-    height: 800px;
-    padding-top: 5rem;
+footer .socials > i {
+	padding-right: 1rem;
 }
 
-/* .rana{
-    /* background-color: cornflowerblue; */
-    /* height: 380px; */
-    /* margin-bottom: 0.5rem;
- } */
-
-.row{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+footer .first-level-list {
+	display: flex;
+	list-style: none;
 }
 
-h2{
-    font-size: 35px;
-    text-align: center;
-}
-
-.talk{
-    font-size: 20px;
-}
-
-.grigio{
-    background-color: grey;
-    padding-top: 5rem;
-    height: 800px;
-}
-
-.grigiodue{
-    background-color: grey;
-    padding-top: 6rem;
-    height: 1000px;
-    margin-inline: auto;
-}
-
-.ciao{
-    max-width: 1000px;
-    margin-inline: auto;
-}
-
-.video{
-    font-size: 20px;
-    margin-top: 2rem;
-    text-align: center;
-}
-
-h3{
-    font-size: 27px;
-    text-align: center;
-    margin-top: 2rem;
-    background-image: url(../img/stars.svg);
-}
-
-.installa{
-    background-color: cornflowerblue;
-    font-size: 20px;
-    height: 45px;
-    width: 160px;
-    border-radius: 20px;
-    color: black;
-    margin-inline: auto;
-}
-
-footer{
-    background-color: black;
-    margin-inline: auto;
+footer .first-level-list .column-links {
+	flex: 0 0 25%;
 }
 
 
-.colonna{
-    height: 500px;
+footer .footer-bottom {
+	display: flex;
+	justify-content: space-between;
 }
 
-.uno{
-    background-color: salmon;
-    width: 400px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+/* per fare le onde */
+
+.wave {
+	display: block;
+	width: 100%;
+	opacity: 20%;
 }
 
-.due{
-    background-color: aquamarine;
-    width: 150px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+.wave.bottom {
+	transform: rotateX(180deg) rotateY(180deg);
 } 
-
-hr{
-    border: 1px solid red;
-}
